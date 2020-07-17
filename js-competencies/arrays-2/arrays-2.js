@@ -10,7 +10,12 @@
 //addMoreDucks should return the array.
 
 //Code here
-
+function addMoreDucks(arr){
+    if(arr.length > 4){
+        arr.splice(2,1,"42 ducks")
+    }
+    return arr
+}
 
 //////////////////PROBLEM 2////////////////////
 
@@ -19,7 +24,12 @@
 //the 3rd element of the array. cutItOut should return the array.
 
 //Code here
-
+function cutItOut(arr){
+    if(arr.length >4){
+        arr.splice(2,1)
+    }
+    return arr
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -28,4 +38,11 @@
 //changeName should return the array.
 
 //Code here
-
+function changeName(arr){
+    let change = arr.indexOf('Tolkn')
+    if (change !== -1){
+        arr.splice(change, 1, 'Tolkien')
+    }
+    return arr
+}
+  
